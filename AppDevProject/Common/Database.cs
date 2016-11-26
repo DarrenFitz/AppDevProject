@@ -8,15 +8,50 @@ using System.Threading.Tasks;
 
 namespace AppDevProject.Common
 {
-    string path;
-    SQLiteConnection conn;
-
-    public Database()
+    public class Database
     {
-        path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path,
-            "MyDatabase.sqlite");
-        conn = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
-        //Create Table
-        conn.CreateTable<User>();
+        string path;
+        SQLiteConnection conn;
+
+        public Database()
+        {
+            path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "MyDatabase.sqlite");
+            conn = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
+            
+            //Create Table
+            conn.CreateTable<User>();
+        }
+
+        public int Register(User user)
+        {   
+            int code = 1;
+            try
+            {
+                conn.Insert(new User()
+                {
+                    //Comparing the users 
+                    UserName = user.UserName,
+                    Password = user.Password,
+                    Email = user.Email
+                });
+            }
+            catch (SQLiteException ex)
+            {
+                code = -1;
+            }
+            return code;
+        }
+
+
+        public bool Login(string user, string password)
+        {
+            var query = conn.Table<User>().
+                Where(t => t.UserName == user && t.Password == password); //Comparing the username and password imput in login page
+            if (query.Count() > 0)                                        //to username and password in db.
+                return true;
+            else
+                return false;
+        }
+
     }
 }
