@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Windows.Foundation;
 using Windows.UI;
 using Windows.UI.StartScreen;
@@ -46,4 +47,32 @@ public class Library
         display.Items.Add(new Item { Id = tile.TileId, Content = value, Colour = new SolidColorBrush(background) });
     }
 
+    public async void Remove(ListBox display)
+    {
+        if(display.SelectedIndex > -1)
+        {
+            string id = ((Item)display.SelectedItem).Id;
+            if (SecondaryTile.Exists(id))
+            {
+                SecondaryTile tile = new SecondaryTile(id);
+                await tile.RequestDeleteAsync();
+            }
+            display.Items.RemoveAt(display.SelectedIndex);
+        }
+    }
+
+    public async void List(ListBox display)
+    {
+        display.Items.Clear();
+        IReadOnlyList<SecondaryTile> list = await SecondaryTile.FindAllAsync();
+        foreach (SecondaryTile item in list)
+        {
+            display.Items.Add(new Item
+            {
+                Id = item.TileId,
+                Content = item.DisplayName,
+                Colour = new SolidColorBrush(item.VisualElements.BackgroundColor)
+            });
+        }
+    }
 }
