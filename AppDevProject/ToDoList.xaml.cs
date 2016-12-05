@@ -22,9 +22,20 @@ namespace AppDevProject
     /// </summary>
     public sealed partial class ToDoList : Page
     {
+        Library Library = new Library();
         public ToDoList()
         {
             this.InitializeComponent();
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+            Library.Remove(Display);
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            Library.Add(Display, Value.Text, Colour, sender);
         }
     }
 }
