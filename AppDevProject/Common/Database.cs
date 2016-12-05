@@ -13,12 +13,13 @@ namespace AppDevProject.Common
         string path;
         SQLiteConnection conn;
 
+        //setting up the local database path 
         public Database()
         {
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "MyDatabase.sqlite");
             conn = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
             
-            //Create Tables
+            //Create User Tables
             conn.CreateTable<User>();
         }
 

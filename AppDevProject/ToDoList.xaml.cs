@@ -53,13 +53,13 @@ namespace AppDevProject
 
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
-            Library.Remove(Display);
+            Library.Remove(Display); //Remove the ToDO Item. 
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            Library.Add(Display, Value.Text, Colour, sender);
-            Value.Text = "";
+            Library.Add(Display, Value.Text, Colour, sender);//Add the message and colour box to list
+            Value.Text = "";//clear the textbox after each use
         }
 
         private void Display_SelectionChanged(object sender, SelectionChangedEventArgs e)

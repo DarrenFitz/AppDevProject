@@ -44,7 +44,7 @@ namespace AppDevProject
             }
             else
             {
-                var message = new MessageDialog("Login Failed");
+                var message = new MessageDialog("Login Failed"); //Display Message that tell user login was unsuccessful
                 await message.ShowAsync();
             }    
         }

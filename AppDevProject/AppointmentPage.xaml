@@ -10,8 +10,9 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel VerticalAlignment="Center"
                     HorizontalAlignment="Center"
-                    Width="310">
-            <TextBlock Margin="10" Text="Enter Appointment Details!" HorizontalAlignment="Center"/>
+                    Width="310" 
+                    Margin="0 0 0 80">
+            <TextBlock Margin="0,10,65,10" Text="Enter Appointment Details!" HorizontalAlignment="Right"/>
             <DatePicker Name="StartDate" Margin="1" HorizontalAlignment="Center"/>
             <TimePicker Name="StartTime" Margin="1" HorizontalAlignment="Center"/>
             <TextBlock Margin="10" Text="Subject:"/>
@@ -22,9 +23,9 @@
             <TextBox Name="Details" Width="300" MaxLength="255" HorizontalAlignment="Center"/>
             <TextBlock Margin="10" Text="Duration:"/>
             <ComboBox x:Name="Duration" SelectedIndex="0">
-                    <ComboBoxItem Tag="30" Content="30 Minutes"/>
-                    <ComboBoxItem Tag="60" Content="1 hour"/>
-                </ComboBox>
+                <ComboBoxItem Tag="30" Content="30 Minutes"/>
+                <ComboBoxItem Tag="60" Content="1 hour"/>
+            </ComboBox>
             <CheckBox x:Name="AllDay" Content="All Day" Margin="10,10,0,10" HorizontalAlignment="Left"/>
         </StackPanel>
     </Grid>
