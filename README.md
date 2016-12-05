@@ -1,6 +1,6 @@
 # Mobile Applications Project
 ###### Darren Fitz
-####### G00311853
+###### G00311853
 
 ## Introduction
 For this Universal Windows Platform (UWP), I deceided to make a type of utility app that allowed you to make a To-Do list or schedule appointments into your calendar on your phone. This app include a login feature thatutilises a SQLite database engine, which stores the name and password of the user.
@@ -24,3 +24,5 @@ Then we have to a page with option of either a To-Do List or Appointment App . T
 <img src="Screenshots/3.PNG" alt="home" width="200" height="400"/>
 <img src="Screenshots/4.PNG" alt="home" width="200" height="400"/>
 
+##Issues with the Application
+For this app I couldn't get winUX imlemented. I wanted to use this to add the validation to my RegisterPage. It gave an error complaining that it couldnt find a validation control, so I left it out. 
