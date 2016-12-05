@@ -12,6 +12,23 @@ For this Universal Windows Platform (UWP), I deceided to make a type of utility 
 + Data binding
 + Async - Await
 
+##How I Set Up SQLite for UWP
+
+To incorporate the SQLite database I installed the following packages using NuGet Package Manager:
+
+    - SQLite.Net PCL
+	
+Then Went to Tools > Extensions and Updates
+
+	- Ensured SQLite for Universal Windows Platfrom was installed 
+
+Then Went Right-Click reference > Add reference > Universal Windows> Extensions
+	
+	- Checked [✓] - SQLite for Universal Windows Platfrom
+	- Checked [✓] - c++ 2015 Runtime for Universal Windows platfrom app
+
+    
+
 ##How to use the Application
 The main login Page is where the app begins. It's where you have the option of signing in to the app if you already have an account made. If you dont have an account you can create one by imputting a Username, E-mail, and Password on the RegisterPage. When you have your account setup you Login. Login compares the login credentials with a corrisponding created acccount credentials in the SQLite databse. If they match Access is granted.
 
