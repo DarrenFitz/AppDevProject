@@ -27,4 +27,6 @@ Then we navigate to a page which preset the option of a To-Do List or Appointmen
 ##Difficulties with Application
 For this app I couldn't get winUX imlemented. I wanted to use this to add the validation to my RegisterPage. It gave an error complaining that it couldnt find a validation control, so I left it out.
 
+This proved troublesome because it meant that a user could enter no data and create a password/username that was empty. It really would have tied the app together more and allowed me to ensure email syntax was valid too. I had some of the code for validation left commented out in the resigration xaml page.
+
 
