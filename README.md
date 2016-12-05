@@ -1,5 +1,5 @@
 # Mobile Applications Project
-###### Gary Mc Hugh 
+###### Darren Fitz
 ####### G00311853
 
 ## Introduction
