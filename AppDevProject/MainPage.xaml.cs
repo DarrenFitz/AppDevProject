@@ -40,15 +40,13 @@ namespace AppDevProject
         {
             if(db.Login(txtUser.Text, txtPassword.Password))
             {
-                //Frame.Navigate(typeof(NewPage));
-                var message = new MessageDialog("Login Successful");
-                await message.ShowAsync();
+                Frame.Navigate(typeof(ToDoList));
             }
             else
             {
                 var message = new MessageDialog("Login Failed");
                 await message.ShowAsync();
-            } 
+            }    
         }
     }
 }

@@ -18,8 +18,8 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="0" Margin="20" VerticalAlignment="Center" Name="Value"/>
-                <ComboBox Grid.Column="1" Name="Colour" VerticalAlignment="Center" Margin="20">
+                <TextBox x:ConnectionId='2' Grid.Column="0" Margin="20" VerticalAlignment="Center" Name="Value"/>
+                <ComboBox x:ConnectionId='3' Grid.Column="1" Name="Colour" VerticalAlignment="Center" Margin="20">
                     <ComboBoxItem Tag="FF000000" IsSelected="True">
                         <Rectangle Width="25" Height="14" Fill="Black"></Rectangle>
                     </ComboBoxItem>
@@ -53,7 +53,7 @@
                 </ComboBox>
             </Grid>
 
-            <ListBox Name="Display" Grid.Row="1">
+            <ListBox x:ConnectionId='1' Name="Display" Grid.Row="1">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -68,9 +68,10 @@
     <Page.BottomAppBar>
         <AppBar IsOpen="True" IsSticky="True">
             <StackPanel Orientation="Horizontal">
-                <AppBarButton Name="Add" Icon="Add" Label="Add" Click="Add_Click"/>
-                <AppBarButton Name="Remove" Icon="Remove" Label="Remove" Click="Remove_Click"/>
+                <AppBarButton x:ConnectionId='4' Name="Add" Icon="Add" Label="Add"                  />
+                <AppBarButton x:ConnectionId='5' Name="Remove" Icon="Remove" Label="Remove"                     />
             </StackPanel>
         </AppBar>
     </Page.BottomAppBar>
 </Page>
+

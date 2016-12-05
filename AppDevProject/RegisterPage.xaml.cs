@@ -45,7 +45,6 @@ namespace AppDevProject
             //Remove Handle Back Button
             SystemNavigationManager.GetForCurrentView().BackRequested -= RegisterPage_BackRequested;
         }
-    
 
         private void RegisterPage_BackRequested(object sender, BackRequestedEventArgs e)
         {

@@ -197,3 +197,8 @@ C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\RegisterPage
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\RegisterPage.xaml
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\RegisterPage.xbf
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\RegisterPage.xbf
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\ToDoList.xbf
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\ToDoList.g.i.cs
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\ToDoList.g.cs
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\ToDoList.xaml
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\ToDoList.xbf
