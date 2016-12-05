@@ -26,5 +26,15 @@ namespace AppDevProject
         {
             this.InitializeComponent();
         }
+
+        private void btnToDO_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ToDoList));
+        }
+
+        private void btnCalendar_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AppointmentPage));
+        }
     }
 }

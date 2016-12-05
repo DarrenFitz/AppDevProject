@@ -211,3 +211,13 @@ C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\WriteableBit
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\WriteableBitmapEx.WinRT.pdb
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\AppDevProject.csproj.GenerateResource.Cache
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\WinUX.UWP.pri.xml
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\AppointmentPage.g.i.cs
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\AppointmentPage.g.cs
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\MiddleOption.g.i.cs
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\MiddleOption.g.cs
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\AppointmentPage.xaml
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\MiddleOption.xaml
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\AppointmentPage.xbf
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\MiddleOption.xbf
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\AppointmentPage.xbf
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\MiddleOption.xbf

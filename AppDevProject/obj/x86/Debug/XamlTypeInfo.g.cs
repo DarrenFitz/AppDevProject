@@ -132,19 +132,23 @@ namespace AppDevProject.AppDevProject_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "AppDevProject.MainPage";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "AppDevProject.AppointmentPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "AppDevProject.RegisterPage";
-            _typeNameTable[4] = "AppDevProject.ToDoList";
+            _typeNameTable[3] = "AppDevProject.MainPage";
+            _typeNameTable[4] = "AppDevProject.MiddleOption";
+            _typeNameTable[5] = "AppDevProject.RegisterPage";
+            _typeNameTable[6] = "AppDevProject.ToDoList";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::AppDevProject.Appointment);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::AppDevProject.AppointmentPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::AppDevProject.RegisterPage);
-            _typeTable[4] = typeof(global::AppDevProject.ToDoList);
+            _typeTable[3] = typeof(global::AppDevProject.MainPage);
+            _typeTable[4] = typeof(global::AppDevProject.MiddleOption);
+            _typeTable[5] = typeof(global::AppDevProject.RegisterPage);
+            _typeTable[6] = typeof(global::AppDevProject.ToDoList);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,9 +183,11 @@ namespace AppDevProject.AppDevProject_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::AppDevProject.Appointment(); }
-        private object Activate_3_RegisterPage() { return new global::AppDevProject.RegisterPage(); }
-        private object Activate_4_ToDoList() { return new global::AppDevProject.ToDoList(); }
+        private object Activate_0_AppointmentPage() { return new global::AppDevProject.AppointmentPage(); }
+        private object Activate_3_MainPage() { return new global::AppDevProject.MainPage(); }
+        private object Activate_4_MiddleOption() { return new global::AppDevProject.MiddleOption(); }
+        private object Activate_5_RegisterPage() { return new global::AppDevProject.RegisterPage(); }
+        private object Activate_6_ToDoList() { return new global::AppDevProject.ToDoList(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,9 +199,9 @@ namespace AppDevProject.AppDevProject_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  AppDevProject.MainPage
+            case 0:   //  AppDevProject.AppointmentPage
                 userType = new global::AppDevProject.AppDevProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_AppointmentPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -208,16 +214,30 @@ namespace AppDevProject.AppDevProject_XamlTypeInfo
                 xamlType = new global::AppDevProject.AppDevProject_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  AppDevProject.RegisterPage
+            case 3:   //  AppDevProject.MainPage
                 userType = new global::AppDevProject.AppDevProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_RegisterPage;
+                userType.Activator = Activate_3_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  AppDevProject.ToDoList
+            case 4:   //  AppDevProject.MiddleOption
                 userType = new global::AppDevProject.AppDevProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_ToDoList;
+                userType.Activator = Activate_4_MiddleOption;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  AppDevProject.RegisterPage
+                userType = new global::AppDevProject.AppDevProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_RegisterPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  AppDevProject.ToDoList
+                userType = new global::AppDevProject.AppDevProject_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_ToDoList;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

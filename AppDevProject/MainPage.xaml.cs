@@ -40,7 +40,7 @@ namespace AppDevProject
         {
             if(db.Login(txtUser.Text, txtPassword.Password))
             {
-                Frame.Navigate(typeof(ToDoList));
+                Frame.Navigate(typeof(MiddleOption));
             }
             else
             {
