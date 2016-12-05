@@ -202,3 +202,12 @@ C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\ToDoList.g.i
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\ToDoList.g.cs
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\ToDoList.xaml
 C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\ToDoList.xbf
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\Microsoft.Graphics.Canvas.dll
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\Microsoft.Graphics.Canvas.winmd
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\WinUX.Common.dll
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\WinUX.UWP.dll
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\WriteableBitmapEx.WinRT.dll
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\bin\x86\Debug\WriteableBitmapEx.WinRT.pdb
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\AppDevProject.csproj.GenerateResource.Cache
+C:\Users\Darren\Documents\AppDevProject\AppDevProject\obj\x86\Debug\WinUX.UWP.pri.xml

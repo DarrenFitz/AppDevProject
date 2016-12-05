@@ -71,6 +71,7 @@ namespace AppDevProject
                 var message = new MessageDialog("Registeration Succesful!!");
                 await message.ShowAsync();
             }
+
         }
     }
 }

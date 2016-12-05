@@ -18,18 +18,17 @@ namespace AppDevProject.Common
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "MyDatabase.sqlite");
             conn = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
             
-            //Create Table
+            //Create Tables
             conn.CreateTable<User>();
         }
 
         public int Register(User user)
         {   
-            int code = 1;
+            int code = 1;//Used to reset 
             try
             {
-                conn.Insert(new User()
+                conn.Insert(new User()//add info to database
                 {
-                    //Comparing the users 
                     UserName = user.UserName,
                     Password = user.Password,
                     Email = user.Email
@@ -41,7 +40,6 @@ namespace AppDevProject.Common
             }
             return code;
         }
-
 
         public bool Login(string user, string password)
         {

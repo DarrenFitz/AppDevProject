@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="AppDevProject.MainPage"
+    x:Class="AppDevProject.MiddleOption"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:AppDevProject"
@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#242e38">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid VerticalAlignment="Center" Background="White"
               Margin="8"
               Padding="16">
@@ -17,39 +17,26 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
-            <TextBox x:ConnectionId='1' x:Name="txtUser"
-                     Grid.Row="0"
-                     PlaceholderText="Username"
-                     Margin="8"/>
-            <PasswordBox x:ConnectionId='2' x:Name="txtPassword"
-                     Grid.Row="1"
-                     PlaceholderText="Password"
-                     Margin="8"/>
-            <CheckBox x:ConnectionId='3' x:Name="ckbRemember"
-                      Content="Remember"
-                      Margin="8"
-                      Grid.Row="2"/>
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:ConnectionId='4' x:Name="btnLogin"
+                <Button x:Name="btnToDo"
                         Grid.Column="0"
-                        Content="Login"
+                        Content="To Do List"
                         Margin="8"
-                        Background="#1cb3bc"
+                        Background="RosyBrown"
                         Foreground="White"
-                        HorizontalAlignment="Stretch"                       />
-                <Button x:ConnectionId='5' x:Name="btnRegister"
+                        HorizontalAlignment="Stretch" Click="btnToDO_Click"/>
+                <Button x:Name="btnCalendar"
                         Grid.Column="1"
-                        Content="Register"
+                        Content="Calendar"
                         Margin="8"
-                        Background="#D32424"
+                        Background="LightBlue"
                         Foreground="White"
-                        HorizontalAlignment="Stretch"                          />
+                        HorizontalAlignment="Stretch" Click="btnCalendar_Click"/>
             </Grid>
         </Grid>
-        </Grid>
+    </Grid>
 </Page>
-

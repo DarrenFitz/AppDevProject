@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppDevProject.Common;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -58,6 +59,12 @@ namespace AppDevProject
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             Library.Add(Display, Value.Text, Colour, sender);
+            Value.Text = "";
+        }
+
+        private void Display_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

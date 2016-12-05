@@ -5,10 +5,11 @@
     xmlns:local="using:AppDevProject"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
     mc:Ignorable="d">
 
     <Grid Background="#0d2e4f">
-        <!--
+        <!-- Validation that Doesnt Work
         <Grid.Resources>
             <validation:ValidationRules x:Key="LengthCheck">
                 <validation:ValidationRules.Rules>
@@ -20,8 +21,8 @@
                     <rules:EmailValidationRule/>
                 </validation:ValidationRules.Rules>
             </validation:ValidationRules>
-        </Grid.Resources>
-        -->
+        </Grid.Resources>-->
+        
 
         <Grid VerticalAlignment = "Top"
               Margin="8 16 8 8"
@@ -34,11 +35,13 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
+            
             <!--<controls:ValidatingTextBox x:Name="txtEmail"
                                         Placeholder ="Èmail"
                                         Margin="8"
                                         Grid.Row="2"
                                         ValidationRules="{StaticResource LengthCheck}"/> -->
+            
             <TextBox x:Name="txtUserName"
             PlaceholderText ="Username"
             Margin="8 24 8 0"
@@ -59,8 +62,6 @@
                                         Margin="8"
                                         Grid.Row="0 "
                                         ValidationRules="{StaticResource EmailCheck}"/> -->
-
-
             <Button x:Name="btnRegister"
                      Content ="Register"
                      Foreground="White"

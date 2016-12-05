@@ -32,11 +32,11 @@
                     <ComboBoxItem Tag="FFFFA500" IsSelected="True">
                         <Rectangle Width="25" Height="14" Fill="Orange"></Rectangle>
                     </ComboBoxItem>
-                    <ComboBoxItem Tag="FF008000" IsSelected="True">
-                        <Rectangle Width="25" Height="14" Fill="Green"></Rectangle>
-                    </ComboBoxItem>
                     <ComboBoxItem Tag="FFFFFF00" IsSelected="True">
                         <Rectangle Width="25" Height="14" Fill="Yellow"></Rectangle>
+                    </ComboBoxItem>
+                    <ComboBoxItem Tag="FF008000" IsSelected="True">
+                        <Rectangle Width="25" Height="14" Fill="Green"></Rectangle>
                     </ComboBoxItem>
                     <ComboBoxItem Tag="FF00FFFF" IsSelected="True">
                         <Rectangle Width="25" Height="14" Fill="Cyan"></Rectangle>
@@ -53,7 +53,7 @@
                 </ComboBox>
             </Grid>
 
-            <ListBox Name="Display" Grid.Row="1">
+            <ListBox Name="Display" Grid.Row="1" SelectionChanged="Display_SelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
