@@ -10,7 +10,7 @@
 
 namespace AppDevProject
 {
-    partial class MainPage : 
+    partial class Appointment : 
         global::Windows.UI.Xaml.Controls.Page, 
         global::Windows.UI.Xaml.Markup.IComponentConnector,
         global::Windows.UI.Xaml.Markup.IComponentConnector2

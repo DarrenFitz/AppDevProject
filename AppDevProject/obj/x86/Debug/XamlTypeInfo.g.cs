@@ -140,7 +140,7 @@ namespace AppDevProject.AppDevProject_XamlTypeInfo
             _typeNameTable[4] = "AppDevProject.ToDoList";
 
             _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::AppDevProject.MainPage);
+            _typeTable[0] = typeof(global::AppDevProject.Appointment);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::AppDevProject.RegisterPage);
@@ -179,7 +179,7 @@ namespace AppDevProject.AppDevProject_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::AppDevProject.MainPage(); }
+        private object Activate_0_MainPage() { return new global::AppDevProject.Appointment(); }
         private object Activate_3_RegisterPage() { return new global::AppDevProject.RegisterPage(); }
         private object Activate_4_ToDoList() { return new global::AppDevProject.ToDoList(); }
 
