@@ -9,7 +9,7 @@ For this Universal Windows Platform (UWP), I deceided to make a type of utility 
 + UWP (Universal Windows Platform)
 + SQLite database
 + Observable Collection
-+ Lambda
++ Data binding
 + Async - Await
 
 ##How to use the Application
