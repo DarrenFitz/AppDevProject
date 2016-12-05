@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,27 @@ namespace AppDevProject
         public MiddleOption()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            //Handle Back Button
+            SystemNavigationManager.GetForCurrentView().BackRequested += MiddleOption_BackRequested;
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+            //Remove Handle Back Button
+            SystemNavigationManager.GetForCurrentView().BackRequested -= MiddleOption_BackRequested;
+        }
+
+        private void MiddleOption_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            e.Handled = true;
+            if (Frame.CanGoBack)
+                Frame.GoBack();
         }
 
         private void btnToDO_Click(object sender, RoutedEventArgs e)
